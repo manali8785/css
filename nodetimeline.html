@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeTimeline</title>
+    <style>
+    body{
+        font-family: Helvetica;
+        color: gray;
+    }
+    div.date{
+        float:left;
+        width:200px;
+        text-align: right;
+        margin-right: 1em;
+    }
+
+    div.content{
+        float:left;
+        border-left: 2px dotted grey;
+        border-top: 2px dotted grey;
+        width: 700px;
+        height:auto;
+
+    }
+
+    div.parent{
+        clear: left;
+        margin-top: 2em;
+
+    }
+
+    div.inner-content{
+        height:auto;
+        background-color: white;
+        margin-left: 1em;
+        border-left: 4px solid red;
+        padding: 1em;
+        margin-bottom: 2em;
+        margin-top: -1em;
+    }
+
+    </style>
+</head>
+
+<body>
+<div class="parent">
+    <div class="date">November 11th, 2015</div>
+    <div class="content">
+        <div class="inner-content">
+            <h2>Node.js - 1.6.1</h2>
+            <ul>
+                <li>Bugfix: Fixed a bug that prevented the promise-queue library from being configured.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="date">November 11th, 2015</div>
+    <div class="content">
+        <div class="inner-content">
+            <h2>Node.js - 1.6.0</h2>
+            <ul>
+                <li>Bugfix: Fix methodUnsupported warning when using the SDK in a NodeJS environment.</li>
+                <li>Enhancement: Batch sync operations to prevent exhausting network resources.
+                    Cache database data in memory for faster retrievals.
+                    Don't send unnecessary network requests when syncing items created on the client.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="date">November 2nd, 2015</div>
+    <div class="content">
+        <div class="inner-content">
+            <h2>Business Logic - 1.1.1</h2>
+            <ul>
+                <li>Upgraded request module to v2.65.0</li>
+                <li>Upgraded async module to v1.4.2</li>
+                <li>Upgraded moment to v2.10.6</li>
+                <li>Added modules.twilio library for twilio support</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="date">September 30th, 2015</div>
+    <div class="content">
+        <div class="inner-content">
+            <h2>Business Logic CLI - 0.5.1</h2>
+            <ul>
+                <li>Internal improvements.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
